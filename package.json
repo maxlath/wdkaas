@@ -1,0 +1,53 @@
+{
+  "name": "wdkaas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "supervisor -w index.js,lib,config index.js",
+    "test": "mocha",
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/maxlath/wdkaas"
+  },
+  "keywords": [
+    "wikidata",
+    "sdk",
+    "saas",
+    "simplify",
+    "http",
+    "api",
+    "sparql"
+  ],
+  "author": "maxlath",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "bluereq": "^2.1.7",
+    "config": "^1.30.0",
+    "express": "^4.16.3",
+    "inv-loggers": "^3.3.7",
+    "lodash": "^4.17.10",
+    "mocha": "^5.2.0",
+    "morgan": "^1.1.1",
+    "serve-favicon": "^2.5.0",
+    "should": "^13.2.1",
+    "wikidata-sdk": "^5.15.0"
+  },
+  "devDependencies": {
+    "standard": "^11.0.1",
+    "supervisor": "^0.12.0"
+  },
+  "standard": {
+    "ignore": [
+      "dist"
+    ],
+    "globals": [
+      "it",
+      "describe"
+    ]
+  }
+}
